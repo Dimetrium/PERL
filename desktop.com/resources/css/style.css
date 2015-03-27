@@ -1,0 +1,106 @@
+* { margin: 0; padding: 0; }
+html
+{
+        color: #333333;
+            background-color: #ffffff;
+                font: normal 12px  Verdana, Sans-Serif;
+            }
+           
+
+
+        a { text-decoration: none; font-weight: bold; border-bottom: 1px dotted #333333; }
+
+        a:link { color: #567ec4; border-bottom-color: #567ec4;}
+
+        a:visited { color: #81a2c3; border-bottom-color: #81a2c3; }
+
+        a:hover, a:active { color: #cc3333; border-bottom-style: solid; border-bottom-color: #cc3333; }
+
+
+
+        body { }
+
+        #container{
+            width: 100%;
+            margin-top:10px;
+            background-image:url(pic.jpg);
+            background-repeat: no-repeat;   
+                        }
+
+                        #top{
+                            width: 900px; 
+                            margin: 0 auto;
+                            margin-bottom:15px;
+                                    }
+
+                                    #enter{
+                                        width: 200px;
+                                        margin: 0 auto;
+                                        margin-left:750px;
+                                                }
+
+                                                #header{
+                                                    width: 900px; 
+                                                    margin: 0 auto;
+                                                    background-color: #778899; 
+                                                    margin-bottom:10px;
+                                                    height:50px;
+                                                    padding-top:25px;
+                                                                        }
+
+                                                                        #content {  
+                                                                            width: 900px; 
+                                                                            margin: 0 auto;
+                                                                            margin-bottom:10px;
+                                                                            /*height:500px;*/
+                                                                            padding-left:10px;  
+                                                                                        }
+                                                                                        .item{
+                                                                                            padding:15px;
+                                                                                            }
+
+                                                                                            .item:hover{
+                                                                                                background:#FFF8DC;
+                                                                                                /*border:1px solid #6A5ACD;*/
+                                                                                                cursor:pointer;
+                                                                                                    }
+
+                                                                                                    .desc{
+                                                                                                        display:none;
+                                                                                                        }
+
+                                                                                                        .message{
+                                                                                                            display:block;
+                                                                                                            }
+
+                                                                                                            .active{
+                                                                                                                display:block;
+                                                                                                                }
+
+                                                                                                                #footer 
+                                                                                                                { 
+                                                                                                                    margin: 0 auto;
+                                                                                                                    margin-top:10px;
+                                                                                                                    width: 900px; 
+                                                                                                                    color: #fff;
+                                                                                                                    background-color: #778899;
+                                                                                                                    text-align:center;
+                                                                                                                    height:30px;
+                                                                                                                    padding-top:10px;
+                                                                                                                                                }
+
+
+                                                                                                                                                #form_order{
+                                                                                                                                                    font-family: Verdana, Arial;   
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    width:30em;
+                                                                                                                                                    height:17em;
+                                                                                                                                                    font-size:13px;
+                                                                                                                                                    border:1px solid #567ec4;
+                                                                                                                                                    display:none;
+                                                                                                                                                    background-color:#eeeeee;
+                                                                                                                                                    padding:10px;
+                                                                                                                                                    margin: auto;
+                                                                                                                                                                                        }
+
+

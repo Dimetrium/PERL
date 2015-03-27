@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>{title}</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div id="signupbox" style="margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <div class="panel-title">{paneltitle}</div>
+      </div>
+      <div class="panel-body">
+        <form id="signupform" class="form-horizontal" role="form">
+
+          <!--         Email input-->
+          <div class="form-group">
+            <label for="email" class="col-md-3 control-label">{email}</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" name="email" placeholder="{emailplaceholder}">
+            </div>
+          </div>
+          <!--         Email input END-->
+
+          <!--         Name input-->
+          <div class="form-group">
+            <label for="name" class="col-md-3 control-label">{name}</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" name="name" placeholder="{name}">
+            </div>
+          </div>
+          <!--          Name input END -->
+
+          <!--          Phone input-->
+          <div class="form-group">
+            <label for="lastname" class="col-md-3 control-label">{phone}</label>
+            <div class="col-md-9">
+              <input type="text" class="form-control" name="lastname" placeholder="{phone}">
+            </div>
+          </div>
+          <!--         Phone input END-->
+
+          <!--         Password input-->
+          <div class="form-group">
+            <label for="password" class="col-md-3 control-label">{password}</label>
+            <div class="col-md-9">
+              <input type="password" class="form-control" name="passwd" placeholder="{password}">
+            </div>
+          </div>
+          <!--          Password input END-->
+
+          <!--          Button -->
+          <div class="form-group">
+            <div class="col-md-offset-3 col-md-9">
+              <button id="btn-signup" type="button" class="btn btn-info"><i class="icon-hand-right"></i> &nbsp {signup}</button>
+            </div>
+          </div>
+          <!--          Button END-->
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

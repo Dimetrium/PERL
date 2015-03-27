@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DeskTop</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" type="text/css"  href="resources/css/style2.css" />
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.item').click(function(event){
+				event.preventDefault();
+				event.stopPropagation(); 
+				$('.item').find('>div').removeClass('active');
+				$('.newAd1').css('display','none');
+				$(this).find('>div').addClass('active');
+			});
+		$('.SendAd').click(function(event){
+				event.preventDefault();
+				event.stopPropagation(); 
+				$('.desc').removeClass('active');
+				$('.newAd1').css('display','block');
+		});
+		
+	});
+</script>
+</head>
+<body>
+<div id="container">
+	<div id="top">
+		<span class="loggedIn">You are now logged on
+</span>
+	</div>
+		<div id="header">		
+		</div>
+			<div id="content">
+			</div>
+	<div class="AdsTable">
+		<form method="post" action="">
+			<h2 style="text-align: center; margin-bottom: 10px;">All your Ads</h2>
+				<table style="width:100%" cellpadding="2" border="1">
+					<tr>
+						<th>Ads Title</th>
+						<th>Active</th>
+					</tr>
+                    <tr style="text-align: center;">
+                        <td>{Title goes here}</td>
+                        <td><div style="text-align: center;"><input type="checkbox" id="{AdId goes here}"></div></td>
+    
+					</tr>
+					<!--<tr style="text-align: center;">
+						<td>New Car</td>
+						<td><div style="text-align: center;"><input type="checkbox"></div></td>
+    
+                    </tr>-->
+				</table>
+			<div style="margin-left: 40%;margin-top: 3%;"><input name="update" type="submit" id="update" value="Update" style="width:45% ;height: 50px;"></div>	
+		</form>
+	</div>
+		<? endwhile;?>
+		
+	<div class="newAd item" style="margin-top: 7%; margin-left: 39%;">
+			<button class="newAd1" style="height:40px;width:240px;margin-bottom:20px;">Add New Advertisment</button>
+					
+				<div class="desc">
+				<div class="message">
+					<form action="index.php" method="post" style="margin-left:-35%;">
+						<div>New Ad Title<input type="text" class="AdName" name="name">
+							<select style="width:200px; margin-left: 100px;">
+                                <option disabled selected>Select Category</option>
+                                {%Cat%}
+							</select>
+						</div>
+							<textarea cols="80" rows="10" style="margin-top:20px;"></textarea> <br />
+							<input type="submit" class="SendAd" name="enter" value="Send" style="width: 200px; height: 50px;margin-top: 10px;margin-left: 35%;"> 
+					</form>
+				</div>
+			</div>
+		</div>	
+		
+	</div>
+    <div id="footer">
+		Design copyright &copy; 2015 HostingMaks by AlexSoft
+    </div>
+</body>
+</html>
